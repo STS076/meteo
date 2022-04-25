@@ -1,3 +1,7 @@
+/*  */
+/* HEADER */
+/*  */
+
 .header {
     display: flex;
     background-color: #EEF8F8;
@@ -22,16 +26,55 @@ img {
     transform: translate(-50%, -50%);
 }
 
-.rs{
+.logo{
+    height: 3rem;
+    width: auto;
+}
+
+/*  */
+/* MAIN */
+/*  */
+
+body{
+    background-color: #EEF8F8;
+    height: auto;
+}
+
+.cartefrance img {
+    width: 80%;
+    height: auto;
+}
+
+
+.badge{
+    color:#EEF8F8;
+    background-color: #036BA2;
+}
+
+.today:hover{
+    background-color: yellow;
+    color: #036BA2;
+}
+
+.btn{
+    background-color: #036BA2;
+}
+
+.star{
+    color: rgb(255, 225, 0);
+}
+
+/*  */
+/* FOOTER */
+/*  */
+
+.rs {
     width: 3rem;
     height: auto;
 }
 
-.footer{
-background-color: #1C3846;
+.footer {
+    background-color: #1C3846;
 
 }
 
-.main{
-    background-color: #EEF8F8;
-}
