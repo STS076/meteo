@@ -40,10 +40,12 @@ body{
     height: auto;
 }
 
-.cartefrance img {
+.cartefrance img{
+    object-fit: cover;
     width: 80%;
     height: auto;
 }
+
 
 
 .badge{
