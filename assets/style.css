@@ -10,7 +10,7 @@
 }
 
 .navbar {
-    background-color: #036BA2;
+    background-color: #FFE156;
 }
 
 img {
@@ -24,6 +24,7 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    object-fit: cover;
 }
 
 .logo{
@@ -32,15 +33,17 @@ img {
 }
 
 .navbar .bouton{
-    background-color: #0CC8FE;
+    background-color: #3777FF;
 }
+
+
 
 /*  */
 /* MAIN */
 /*  */
 
 body{
-    background-color: #EEF8F8;
+    background-color: #FFE9CE;
     height: auto;
 }
 
@@ -50,24 +53,30 @@ body{
     height: auto;
 }
 
+.tendences{
+    /* background-color: #EAEAEA; */
+}
+
+
+
 
 
 .badge{
-    color:#EEF8F8;
-    background-color: #036BA2;
+    color:black;
+    background-color: #FFB5C2;
 }
 
 .today:hover{
-    background-color: yellow;
-    color: #036BA2;
+    background-color: #FFE156;
+    color: black;
 }
 
 .btn{
-    background-color: #036BA2;
+    background-color: #FFE9CE;;
 }
 
 .star{
-    color: rgb(255, 225, 0);
+    color: #FFE156;
 }
 
 /*  */
@@ -80,7 +89,10 @@ body{
 }
 
 .footer {
-    background-color: #1C3846;
+    background-color:#FFE156 ;
 
 }
-
+.bordo {
+    height: 20rem;
+    width: auto;
+    object-fit: cover;

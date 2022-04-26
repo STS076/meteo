@@ -72,25 +72,115 @@
     <!--  -->
     <!-- MAIN -->
     <!--  -->
-
-    <div id="Carte" class="row-fluid d-flex justify-content-evenly pt-4 pb-2">
-        <span class="badge today">Aujourd'hui</span>
-        <span class="badge today">Demain</span>
-        <span class="badge today">Week-End</span>
-        <span class="badge today">15 jours</span>
+    <div class="container d-lg-block d-none">
+        <div id="Carte" class="row-fluid d-flex justify-content-evenly pt-4 pb-2">
+            <span class="badge today">Aujourd'hui</span>
+            <span class="badge today">Demain</span>
+            <span class="badge today">Week-End</span>
+            <span class="badge today">15 jours</span>
+        </div>
     </div>
 
-    <div class="container">
-        <div class="row py-5 bg-light">
-            <div class="col-lg-6 col-12 text-center cartefrance">
+    <div class="container d-lg-block d-none">
+        <div class="row">
+            <div class="col-lg-7 col-12 text-center cartefrance ">
                 <img src="assets/cartefrance.jpg" alt="cartefrance">
             </div>
-            <div class="col-lg-6 col-12 text-center">
-                <div class="row text-center">
-                    INDICE DE LA QUALITÉ DE L'AIR
+            <div class="col-lg-5 col-12 text-center pt-4">
+                <div class="row text-center pe-3 ">
+                    <p class="fw-bold fs-4">Mardi 26 avril 2022</p>
+                    <p class="fs-6 text-start">La journée débute avec un temps largement ensoleillé. Quelques cumulus de
+                        beau temps se forment
+                        rapidement près des côtes de la Manche. Ils sont plus nombreux en direction de la côte
+                        d'Emeraude.
+                        <br>
+                        Dans l'après-midi, le soleil brille très généreusement avec quelques nuages décoratifs dans
+                        l'intérieur.
+                        <br>
+                        En matinée, le vent d'est-nord-est est faible à modéré. Il vire au nord-est l'après-midi en
+                        étant
+                        sensible près du littoral avec parfois des rafales entre 50 et 60 km/h.
+                        <br>
+                        Le temps est encore très agréable pour mercredi mais on note toujours un vent de nord-est
+                        sensible
+                        près de la Manche. Du côté du ciel, il faudra compter sur la présence d'un voile nuageux. Les
+                        températures sont comprises entre 14 et 20°C.
+                        <br>
+                        Le voile nuageux est plus épais pour jeudi mais le temps est beaucoup plus doux. Les
+                        températures
+                        grimpent pour franchir facilement les 20°C lorsque le vent de nord-est ne souffle pas.
 
                 </div>
             </div>
+
+        </div>
+    </div>
+
+    <div class="container d-lg-none d">
+        <div class="row">
+            <div class="col-12 text-center pt-5">
+                <p class="fs-2 p-0 m-0 fw-bold ">Le Havre</p>
+                <p class="fs-1 p-0 m-0 fw-bold ">12°</p>
+                <p class="fs-6 p-0 m-0">Nuages prédominants</p>
+                <p class="fs-6 p-0 m-0">Min -18°C Max 40°C</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="table-responsive table-hover">
+                <table class="table">
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Heure</th>
+                            <td>0h</td>
+                            <td>2h</td>
+                            <td>5h</td>
+                            <td>7h</td>
+                            <td>9h</td>
+                            <td>11h</td>
+                            <td>13h</td>
+                            <td>15h</td>
+                            <td>17h</td>
+                            <td>19h</td>
+                            <td>21h</td>
+                            <td>23h</td>
+                    </thead>
+                    <tr>
+                        <th scope="row">Température</th>
+                        <td>7°C</td>
+                        <td>7°C</td>
+                        <td>8°C</td>
+                        <td>9°C</td>
+                        <td>12°C</td>
+                        <td>14°C</td>
+                        <td>16°C</td>
+                        <td>16°C</td>
+                        <td>14°C</td>
+                        <td>12°C</td>
+                        <td>10°C</td>
+                        <td>8°C</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td><i class="bi bi-cloud"></i></td>
+                        <td><i class="bi bi-cloud"></i></td>
+                        <td><i class="bi bi-cloud"></i></td>
+                        <td><i class="bi bi-brightness-alt-high"></i></td>
+                        <td><i class="bi bi-cloud-sun"></i></td>
+                        <td><i class="bi bi-cloud-sun"></i></td>
+                        <td><i class="bi bi-brightness-high"></i></td>
+                        <td><i class="bi bi-brightness-high"></i></td>
+                        <td><i class="bi bi-brightness-high"></i></td>
+                        <td><i class="bi bi-brightness-high"></i></td>
+                        <td><i class="bi bi-moon"></i></td>
+                        <td><i class="bi bi-moon"></i></td>
+                    </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+
 
         </div>
     </div>
@@ -100,22 +190,40 @@
     <!--  -->
 
 
-    <h2 id="Favoris" class="p-4 fw-bolder text-decoration-underline text-center py-5">Favoris</h2>
+    <h2 id="Favoris" class="p-2 fw-bolder pt-5 ms-5 ps-5">Favoris</h2>
 
-    <div class="row p-4 justify-content-around">
+    <div class="row p-2 justify-content-around">
 
         <!--  -->
         <!-- LE HAVRE -->
         <!--  -->
 
-        <div class="card col-lg-3 col-12 py-3">
+        <div class="card col-lg-3 col-12 pt-3 d-lg-block d-none">
             <img src="assets/LeHavre.webp" class="card-img-top" alt="le Havre">
-            <div class="card-body">
-                <h5 class="card-title text-center fw-bold py-2">Le Havre</h5>
+            <div class="card-body ">
+                <h5 class="card-title text-center fw-bold">Le Havre</h5>
                 <div class="d-flex justify-content-evenly">
-                    <a type="button" class="btn text-white" href="havre.html" target="_blank"> Voir le temps</a>
-                    <button href="#" class="btn text-white fs-6" data-bs-toggle="modal"
-                        data-bs-target="#Brest">Favoris<span><i class="bi star bi-star-fill fs-6 ps-2"></i></span>
+                    <a type="button" class="btn text-dark" href="havre.html"> Voir le temps</a>
+                    <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
+                        data-bs-target="#LeHavre">Favoris<span><i class="bi star bi-star-fill fs-6 ps-2"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="LeHavre" tabindex="-1" aria-labelledby="LeHavreLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="LeHavreLabel">Le Havre</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Voulez-vous enlever cette ville de vos favoris ?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ajouter</button>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -127,11 +235,29 @@
         <div class="card col-lg-3 col-12 pt-3">
             <img src="assets/tour-eiffel.jpg" class="card-img-top" alt="Paris">
             <div class="card-body">
-                <h5 class="card-title text-center fw-bold py-2">Paris</h5>
+                <h5 class="card-title text-center fw-bold">Paris</h5>
                 <div class="d-flex justify-content-evenly">
-                    <a type="button" class="btn text-white" href="havre.html" target="_blank"> Voir le temps</a>
-                    <button href="#" class="btn text-white fs-6" data-bs-toggle="modal"
-                        data-bs-target="#Brest">Favoris<span><i class="bi star bi-star-fill fs-6 ps-2"></i></span>
+                    <a type="button" class="btn text-dark" href="paris.html" target="_blank"> Voir le temps</a>
+                    <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
+                        data-bs-target="#Paris">Favoris<span><i class="bi star bi-star-fill fs-6 ps-2"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="Paris" tabindex="-1" aria-labelledby="ParisLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ParisLabel">Paris</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Voulez-vous enlever cette ville de vos favoris ?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ajouter</button>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -143,29 +269,64 @@
         <div class="card col-lg-3 col-12 pt-3">
             <img src="assets/vieux-ports.jpg" class="card-img-top" alt="Marseille">
             <div class="card-body">
-                <h5 class="card-title text-center fw-bold py-2">Marseille</h5>
+                <h5 class="card-title text-center fw-bold">Marseille</h5>
                 <div class="d-flex justify-content-evenly">
-                    <a type="button" class="btn text-white" href="havre.html" target="_blank"> Voir le temps</a>
-                    <button href="#" class="btn text-white fs-6" data-bs-toggle="modal"
-                        data-bs-target="#Brest">Favoris<span><i class="bi star bi-star-fill fs-6 ps-2"></i></span>
+                    <a type="button" class="btn text-dark" href="marseille.html" target="_blank"> Voir le temps</a>
+                    <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
+                        data-bs-target="#Marseille">Favoris<span><i class="bi star bi-star-fill fs-6 ps-2"></i></span>
                 </div>
             </div>
         </div>
+        <div class="modal fade" id="Marseille" tabindex="-1" aria-labelledby="MarseilleLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="MarseilleLabel">Marseille</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Voulez-vous enlever cette ville de vos favoris ?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ajouter</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!--  -->
     <!-- BORDEAUX -->
     <!--  -->
 
-    <div class="row p-4 justify-content-around">
-        <div class="card col-lg-3 col-12 pt-3">
+    <div class="row p-2 justify-content-around">
+        <div class="card col-lg-3 col-12 pt-3 d-lg-block d-none">
             <img src="assets/bordeaux.jpg" class="card-img-top" alt="bordeaux">
             <div class="card-body">
-                <h5 class="card-title text-center fw-bold py-2">Bordeaux</h5>
+                <h5 class="card-title text-center fw-bold">Bordeaux</h5>
                 <div class="d-flex justify-content-evenly">
-                    <a type="button" class="btn text-white" href="havre.html" target="_blank"> Voir le temps</a>
-                    <button href="#" class="btn text-white fs-6" data-bs-toggle="modal"
-                        data-bs-target="#Brest">Favoris<span><i class="bi star bi-star-fill fs-6 ps-2"></i></span>
+                    <a type="button" class="btn text-dark" href="bordeaux.html" target="_blank"> Voir le temps</a>
+                    <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
+                        data-bs-target="#Bordeaux">Favoris<span><i class="bi star bi-star-fill fs-6 ps-2"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="Bordeaux" tabindex="-1" aria-labelledby="BordeauxLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="BordeauxLabel">Bordeaux</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Voulez-vous enlever cette ville de vos favoris ?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ajouter</button>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -174,13 +335,13 @@
         <!-- TOULOUSE -->
         <!--  -->
 
-        <div class="card col-lg-3 col-12 pt-3">
+        <div class="card col-lg-3 col-12 pt-3 d-lg-block d-none">
             <img src="assets/toulouse.jpg" class="card-img-top" alt="Toulouse">
             <div class="card-body">
-                <h5 class="card-title text-center fw-bold py-2">Toulouse</h5>
+                <h5 class="card-title text-center fw-bold">Toulouse</h5>
                 <div class="d-flex justify-content-evenly">
-                    <a type="button" class="btn text-white" href="havre.html" target="_blank"> Voir le temps</a>
-                    <button href="#" class="btn text-white fs-6" data-bs-toggle="modal"
+                    <a type="button" class="btn text-dark" href="toulouse.html" target="_blank"> Voir le temps</a>
+                    <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
                         data-bs-target="#Toulouse">Favoris<span><i class="bi star bi-star-fill fs-6 ps-2"></i></span>
                 </div>
             </div>
@@ -208,13 +369,13 @@
         <!-- BREST -->
         <!--  -->
 
-        <div class="card col-lg-3 col-12 pt-3">
+        <div class="card col-lg-3 col-12 pt-3 d-lg-block d-none">
             <img src="assets/brest.jpg" class="card-img-top" alt="Brest">
             <div class="card-body">
-                <h5 class="card-title text-center fw-bold py-2">Brest</h5>
+                <h5 class="card-title text-center fw-bold">Brest</h5>
                 <div class="d-flex justify-content-evenly">
-                    <a type="button" class="btn text-white" href="havre.html" target="_blank"> Voir le temps</a>
-                    <button href="#" class="btn text-white fs-6" data-bs-toggle="modal"
+                    <a type="button" class="btn text-dark" href="brest.html" target="_blank"> Voir le temps</a>
+                    <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
                         data-bs-target="#Brest">Favoris<span><i class="bi star bi-star-fill fs-6 ps-2"></i></span>
                 </div>
             </div>
@@ -244,18 +405,18 @@
     <!--  -->
 
 
-    <h2 class=" p-4 fw-bolder text-decoration-underline text-center py-5">Suggestion</h2>
+    <h2 class="p-2 fw-bolder pt-5 ms-5 ps-5"">Suggestions</h2>
 
-    <div class="row p-4 justify-content-around">
+    <div class=" row p-2 justify-content-around">
 
 
-        <div class="card col-lg-3 col-12 py-3">
+        <div class="card col-lg-3 col-12 pt-3">
             <img src="assets/chamonix.jpg" class="card-img-top" alt="chamonix">
             <div class="card-body">
                 <h5 class="card-title text-center fw-bold py-2">Chamonix</h5>
                 <div class="d-flex justify-content-evenly">
-                    <a type="button" class="btn text-white" href="havre.html" target="_blank"> Voir le temps</a>
-                    <button href="#" class="btn text-white fs-6" data-bs-toggle="modal"
+                    <a type="button" class="btn text-dark" href="chamonix.html" target="_blank"> Voir le temps</a>
+                    <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
                         data-bs-target="#Chamonix">Favoris<span><i class="bi  bi-star-fill fs-6 ps-2"></i></span>
                     </button>
                 </div>
@@ -279,13 +440,13 @@
             </div>
         </div>
 
-        <div class="card col-lg-3 col-12 pt-3">
+        <div class="card col-lg-3 col-12 pt-3 d-lg-block d-none">
             <img src="assets/carcassonne.jpg" class="card-img-top" alt="Carcassonne">
             <div class="card-body">
                 <h5 class="card-title text-center fw-bold py-2">Carcassone</h5>
                 <div class="d-flex justify-content-evenly">
-                    <a type="button" class="btn text-white" href="havre.html" target="_blank"> Voir le temps</a>
-                    <button href="#" class="btn text-white fs-6" data-bs-toggle="modal"
+                    <a type="button" class="btn text-dark" href="carcassonne.html" target="_blank"> Voir le temps</a>
+                    <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
                         data-bs-target="#Carcassonne">Favoris<span><i class="bi  bi-star-fill fs-6 ps-2"></i></span>
                     </button>
                 </div>
@@ -309,13 +470,13 @@
             </div>
         </div>
 
-        <div class="card col-lg-3 col-12 pt-3">
+        <div class="card col-lg-3 col-12 pt-3 d-lg-block d-none">
             <img src="assets/Lille.jpg" class="card-img-top" alt="Lille">
             <div class="card-body">
                 <h5 class="card-title text-center fw-bold py-2">Lille</h5>
                 <div class="d-flex justify-content-evenly">
-                    <a type="button" class="btn text-white" href="havre.html" target="_blank"> Voir le temps</a>
-                    <button href="#" class="btn text-white fs-6" data-bs-toggle="modal"
+                    <a type="button" class="btn text-dark" href="lille.html" target="_blank"> Voir le temps</a>
+                    <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
                         data-bs-target="#Lille">Favoris<span><i class="bi  bi-star-fill fs-6 ps-2"></i></span>
                     </button>
                 </div>
@@ -338,47 +499,73 @@
                 </div>
             </div>
         </div>
-    </div>
+        </div>
 
 
-    <!--  -->
-    <!-- ACTUALITES -->
-    <!--  -->
+        <!--  -->
+        <!-- ACTUALITES -->
+        <!--  -->
 
-    <h2 id="Actualités" class="p-4 fw-bolder text-decoration-underline text-center py-5">Actualités</h2>
+        <h2 id="Actualités" class="p-2 fw-bolder pt-5 ms-5 ps-5 d-lg-block d-none">Actualités</h2>
 
-    <!--  -->
-    <!-- FOOTER -->
-    <!--  -->
+        <div class=" row justify-content-around pb-5 ">
+
+            <div class="card col-lg-3 col-12 pt-3 d-lg-block d-none tendences">
+                <img src="assets/feu.jpg" class="card-img-top" alt="feux">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold ">Incendies dévastateurs dans le monde</h5>
+                </div>
+            </div>
+
+            <div class="card col-lg-3 col-12 pt-3 d-lg-block d-none">
+                <img src="assets/ouragan.webp" class="card-img-top" alt="ouragan">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold ">Ouragans dévastateurs dans le monde</h5>
+                </div>
+            </div>
+
+            <div class="card col-lg-3 col-12 pt-3 d-lg-block d-none">
+                <img src="assets/inondations.jpg" class="card-img-top" alt="innondations">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold ">Innondations dévastatrices dans le monde</h5>
+                </div>
+            </div>
+
+        </div>
+
+        <!--  -->
+        <!-- FOOTER -->
+        <!--  -->
 
 
-    <div class="row footer py-5">
-        <div class="row">
-            <div class="col-lg-12 col-12 text-center justify-content-around pb-4">
-                <span class="pe-5 ps-5 text-white">Copyright © 2022 Jordan & Sophie.</span>
-                <span class="pe-5 ps-5 text-white">Mentions Légales | CGU </span>
+        <div class="row footer py-5">
+            <div class="row">
+                <div class="col-lg-12 col-12 text-center justify-content-around pb-4">
+                    <span class="pe-5 ps-5 text-dark">Copyright © 2022 Jordan & Sophie.</span>
+                    <a type="button" class="pe-5 ps-5 text-dark text-decoration-none" href="conditions.html">Mentions
+                        Légales | CGU </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-lg-12 col-12 j text-center justify-content-evenly">
+                    <img class="rs" src="assets/insta.png">
+                    <img class="rs" src="assets/twitter.png">
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col col-lg-12 col-12 j text-center justify-content-evenly">
-                <img class="rs" src="assets/insta.png">
-                <img class="rs" src="assets/twitter.png">
-            </div>
-        </div>
-    </div>
 
 
 
 
-    <!--  -->
-    <!-- BOOTSTRAP -->
-    <!--  -->
+        <!--  -->
+        <!-- BOOTSTRAP -->
+        <!--  -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
 </body>
 
