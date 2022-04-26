@@ -22,11 +22,11 @@
     <!--  -->
 
     <header>
-        <div class="row-fluid text-center header">
-            <div class="col-lg-12 col-12">
-                <div class="fw-bold fs-1">
+        <div class="row text-center header m-0 p-0">
+            <div class="col-lg-12 col-12 m-0 p-0">
+                <div class="fw-bold fs-1 ">
                     <img class="image" src="assets/cielbleu.jpg">
-                    <div class="meteo">METEO</div>
+                    <div class="meteo">MÉTÉO</div>
                 </div>
             </div>
         </div>
@@ -39,9 +39,9 @@
 
     <!-- <div class="container-fluid"> -->
 
-    <nav class="navbar navbar-expand-lg navbar-light  ">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand ps-5" href="#">
+            <a class="navbar-brand ps-5 d-lg-block d-none" href="#">
                 <img class="logo" src="assets/logo-meteo.png">
             </a>
 
@@ -52,74 +52,155 @@
             </button>
 
             <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
-                <a class="nav-link active text-white fs-3" aria-current="page" href="#Accueil">Accueil</a>
-                <a class="nav-link active text-white fs-3" aria-current="page" href="#Carte">Carte</a>
-                <a class="nav-link active text-white fs-3" aria-current="page" href="#Favoris">Favoris</a>
-                <a class="nav-link active text-white fs-3" aria-current="page" href="#Actualités">Actualités</a>
-            </div>
+                <a class="nav-link active text-dark fs-3" aria-current="page" href="#Accueil">Accueil</a>
+                <a class="nav-link active text-dark fs-3" aria-current="page" href="#Carte">Carte</a>
+                <a class="nav-link active text-dark fs-3" aria-current="page" href="#Favoris">Favoris</a>
+                <a class="nav-link active text-dark fs-3" aria-current="page" href="#Actualités">Actualités</a>
 
-            <nav class="navbar navbar-light ">
-                <div class="container-fluid">
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
-                        <button class="btn bouton text-dark" type="submit">Rechercher</button>
-                    </form>
-                </div>
-            </nav>
+
+                <nav class="navbar navbar-light ">
+                    <div class="container">
+                        <form class="d-flex ">
+                            <input class="form-control" type="search" placeholder="Rechercher" aria-label="Search">
+                            <button class="btn bouton text-dark" type="submit">Rechercher</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
         </div>
     </nav>
 
     <!--  -->
     <!-- MAIN -->
     <!--  -->
-    <div class="container d-lg-block d-none">
-        <div id="Carte" class="row-fluid d-flex justify-content-evenly pt-4 pb-2">
-            <span class="badge today">Aujourd'hui</span>
-            <span class="badge today">Demain</span>
-            <span class="badge today">Week-End</span>
-            <span class="badge today">15 jours</span>
-        </div>
-    </div>
 
-    <div class="container d-lg-block d-none">
-        <div class="row">
-            <div class="col-lg-7 col-12 text-center cartefrance ">
-                <img src="assets/cartefrance.jpg" alt="cartefrance">
+
+    <div class="container pt-3 d-lg-block d-none">
+        <ul class="nav nav-tabs d-flex justify-content-evenly badge" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active text-dark" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                    type="button" role="tab" aria-controls="home" aria-selected="true">Aujourd'hui</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-dark" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                    type="button" role="tab" aria-controls="profile" aria-selected="false">Demain</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-dark" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                    type="button" role="tab" aria-controls="contact" aria-selected="false">Week-End</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="container d-lg-block d-none">
+                    <div class="row">
+                        <div class="col-lg-7 col-12 text-center cartefrance ">
+                            <img src="assets/cartefrance.jpg" alt="cartefrance">
+                        </div>
+                        <div class="col-lg-5 col-12 text-center pt-2">
+                            <div class="row text-center pe-3 ">
+                                <p class="fw-bold fs-4">Mardi 26 avril 2022</p>
+                                <p class="fs-6 text-start">La journée débute avec un temps largement ensoleillé.
+                                    Quelques cumulus de
+                                    beau temps se forment
+                                    rapidement près des côtes de la Manche. Ils sont plus nombreux en direction de la
+                                    côte
+                                    d'Emeraude.
+                                    <br>
+                                    Dans l'après-midi, le soleil brille très généreusement avec quelques nuages
+                                    décoratifs dans
+                                    l'intérieur.
+                                    <br><br>
+                                    En matinée, le vent d'est-nord-est est faible à modéré. Il vire au nord-est
+                                    l'après-midi en
+                                    étant
+                                    sensible près du littoral avec parfois des rafales entre 50 et 60 km/h.
+                                    <br><br>
+                                    Le temps est encore très agréable pour mercredi mais on note toujours un vent de
+                                    nord-est
+                                    sensible
+                                    près de la Manche. Du côté du ciel, il faudra compter sur la présence d'un voile
+                                    nuageux. Les
+                                    températures sont comprises entre 14 et 20°C.
+                                    <br>
+                                    Le voile nuageux est plus épais pour jeudi mais le temps est beaucoup plus doux. Les
+                                    températures
+                                    grimpent pour franchir facilement les 20°C lorsque le vent de nord-est ne souffle
+                                    pas.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
-            <div class="col-lg-5 col-12 text-center pt-4">
-                <div class="row text-center pe-3 ">
-                    <p class="fw-bold fs-4">Mardi 26 avril 2022</p>
-                    <p class="fs-6 text-start">La journée débute avec un temps largement ensoleillé. Quelques cumulus de
-                        beau temps se forment
-                        rapidement près des côtes de la Manche. Ils sont plus nombreux en direction de la côte
-                        d'Emeraude.
-                        <br>
-                        Dans l'après-midi, le soleil brille très généreusement avec quelques nuages décoratifs dans
-                        l'intérieur.
-                        <br>
-                        En matinée, le vent d'est-nord-est est faible à modéré. Il vire au nord-est l'après-midi en
-                        étant
-                        sensible près du littoral avec parfois des rafales entre 50 et 60 km/h.
-                        <br>
-                        Le temps est encore très agréable pour mercredi mais on note toujours un vent de nord-est
-                        sensible
-                        près de la Manche. Du côté du ciel, il faudra compter sur la présence d'un voile nuageux. Les
-                        températures sont comprises entre 14 et 20°C.
-                        <br>
-                        Le voile nuageux est plus épais pour jeudi mais le temps est beaucoup plus doux. Les
-                        températures
-                        grimpent pour franchir facilement les 20°C lorsque le vent de nord-est ne souffle pas.
-
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="container d-lg-block d-none">
+                    <div class="row">
+                        <div class="col-lg-7 col-12 text-center cartefrance ">
+                            <img src="assets/cartefrance2.jpg" alt="cartefrance">
+                        </div>
+                        <div class="col-lg-5 col-12 text-center pt-2">
+                            <div class="row text-center pe-3 ">
+                                <p class="fw-bold fs-4">Vendredi 29 avril 2022</p>
+                                <p class="fs-6 text-start">
+                                    In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Duis sapien nunc,
+                                    commodo et, interdum suscipit, sollicitudin et, dolor. Pellentesque habitant
+                                    morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                                    Aliquam id dolor. Class aptent taciti sociosqu ad litora torquent per conubia
+                                    nostra, per inceptos hymenaeos. Mauris dictum facilisis augue. Fusce tellus.<br>
+                                    <br>
+                                    Pellentesque arcu. Maecenas fermentum, sem in pharetra pellentesque, velit turpis
+                                    volutpat ante, in pharetra metus odio a lectus. Sed elit dui, pellentesque a,
+                                    faucibus vel, interdum nec, diam. Mauris dolor felis, sagittis at, luctus sed,
+                                    aliquam non, tellus. Etiam ligula pede, sagittis quis, interdum ultricies,
+                                    scelerisque eu, urna. Nullam at arcu a est sollicitudin euismod.
+                                    <br><br>Praesent dapibus.
+                                    Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero,
+                                    eget facilisis enim ipsum id lacus. Nam sed tellus id magna elementum tincidunt.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="container d-lg-block d-none">
+                    <div class="row">
+                        <div class="col-lg-7 col-12 text-center cartefrance ">
+                            <img src="assets/cartefrance3.webp" alt="cartefrance">
+                        </div>
+                        <div class="col-lg-5 col-12 text-center pt-2>
+                            <div class="row text-center pe-3 ">
+                                <p class="fw-bold fs-4">Dimanche 1<sup>er</sup> Mai</p>
+                                <p class="fs-6 text-start">
+                                    In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Duis sapien nunc,
+                                    commodo et, interdum suscipit, sollicitudin et, dolor. Pellentesque habitant
+                                    morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                                    Aliquam id dolor. Class aptent taciti sociosqu ad litora torquent per conubia
+                                    nostra, per inceptos hymenaeos. Mauris dictum facilisis augue. Fusce tellus.<br>
+                                    <br>
+                                    Pellentesque arcu. Maecenas fermentum, sem in pharetra pellentesque, velit turpis
+                                    volutpat ante, in pharetra metus odio a lectus. Sed elit dui, pellentesque a,
+                                    faucibus vel, interdum nec, diam. Mauris dolor felis, sagittis at, luctus sed,
+                                    aliquam non, tellus. Etiam ligula pede, sagittis quis, interdum ultricies,
+                                    scelerisque eu, urna. Nullam at arcu a est sollicitudin euismod.
+                                    <br><br>Praesent dapibus.
+                                    Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero,
+                                    eget facilisis enim ipsum id lacus. Nam sed tellus id magna elementum tincidunt.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
 
     <div class="container d-lg-none d">
         <div class="row">
             <div class="col-12 text-center pt-5">
-                <p class="fs-2 p-0 m-0 fw-bold ">Le Havre</p>
+                <p class="fs-3 p-0 m-0 fw-bold ">Le Havre</p>
+                <p class="fs-3 p-0 m-0 fw-bold ">Mardi 26 Avril</p>
                 <p class="fs-1 p-0 m-0 fw-bold ">12°</p>
                 <p class="fs-6 p-0 m-0">Nuages prédominants</p>
                 <p class="fs-6 p-0 m-0">Min -18°C Max 40°C</p>
@@ -128,7 +209,6 @@
         <div class="row">
             <div class="table-responsive table-hover">
                 <table class="table">
-
                     <thead>
                         <tr>
                             <th scope="col">Heure</th>
@@ -175,107 +255,255 @@
                         <td><i class="bi bi-moon"></i></td>
                         <td><i class="bi bi-moon"></i></td>
                     </tr>
-
                     </tbody>
-
                 </table>
             </div>
-
-
         </div>
     </div>
+
+    <div class="container d-lg-none d">
+        <div class="row">
+            <div class="col-12 text-center pt-5">
+                <p class="fs-3 p-0 m-0 fw-bold ">Le Havre</p>
+                <p class="fs-3 p-0 m-0 fw-bold ">Vendredi 29 Avril</p>
+                <p class="fs-1 p-0 m-0 fw-bold ">12°</p>
+                <p class="fs-6 p-0 m-0">Nuages prédominants</p>
+                <p class="fs-6 p-0 m-0">Min -18°C Max 40°C</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="table-responsive table-hover">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Heure</th>
+                            <td>0h</td>
+                            <td>2h</td>
+                            <td>5h</td>
+                            <td>7h</td>
+                            <td>9h</td>
+                            <td>11h</td>
+                            <td>13h</td>
+                            <td>15h</td>
+                            <td>17h</td>
+                            <td>19h</td>
+                            <td>21h</td>
+                            <td>23h</td>
+                    </thead>
+                    <tr>
+                        <th scope="row">Température</th>
+                        <td>7°C</td>
+                        <td>7°C</td>
+                        <td>8°C</td>
+                        <td>9°C</td>
+                        <td>12°C</td>
+                        <td>14°C</td>
+                        <td>16°C</td>
+                        <td>16°C</td>
+                        <td>14°C</td>
+                        <td>12°C</td>
+                        <td>10°C</td>
+                        <td>8°C</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td><i class="bi bi-cloud"></i></td>
+                        <td><i class="bi bi-cloud"></i></td>
+                        <td><i class="bi bi-cloud"></i></td>
+                        <td><i class="bi bi-brightness-alt-high"></i></td>
+                        <td><i class="bi bi-cloud-sun"></i></td>
+                        <td><i class="bi bi-cloud-sun"></i></td>
+                        <td><i class="bi bi-brightness-high"></i></td>
+                        <td><i class="bi bi-brightness-high"></i></td>
+                        <td><i class="bi bi-brightness-high"></i></td>
+                        <td><i class="bi bi-brightness-high"></i></td>
+                        <td><i class="bi bi-moon"></i></td>
+                        <td><i class="bi bi-moon"></i></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-lg-none d">
+        <div class="row">
+            <div class="col-12 text-center pt-5">
+                <p class="fs-3 p-0 m-0 fw-bold ">Le Havre</p>
+                <p class="fs-3 p-0 m-0 fw-bold ">Dimanche 1<sup>er</sup> Mai</p>
+                <p class="fs-1 p-0 m-0 fw-bold ">12°</p>
+                <p class="fs-6 p-0 m-0">Nuages prédominants</p>
+                <p class="fs-6 p-0 m-0">Min -18°C Max 40°C</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="table-responsive table-hover">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Heure</th>
+                            <td>0h</td>
+                            <td>2h</td>
+                            <td>5h</td>
+                            <td>7h</td>
+                            <td>9h</td>
+                            <td>11h</td>
+                            <td>13h</td>
+                            <td>15h</td>
+                            <td>17h</td>
+                            <td>19h</td>
+                            <td>21h</td>
+                            <td>23h</td>
+                    </thead>
+                    <tr>
+                        <th scope="row">Température</th>
+                        <td>7°C</td>
+                        <td>7°C</td>
+                        <td>8°C</td>
+                        <td>9°C</td>
+                        <td>12°C</td>
+                        <td>14°C</td>
+                        <td>16°C</td>
+                        <td>16°C</td>
+                        <td>14°C</td>
+                        <td>12°C</td>
+                        <td>10°C</td>
+                        <td>8°C</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td><i class="bi bi-cloud"></i></td>
+                        <td><i class="bi bi-cloud"></i></td>
+                        <td><i class="bi bi-cloud"></i></td>
+                        <td><i class="bi bi-brightness-alt-high"></i></td>
+                        <td><i class="bi bi-cloud-sun"></i></td>
+                        <td><i class="bi bi-cloud-sun"></i></td>
+                        <td><i class="bi bi-brightness-high"></i></td>
+                        <td><i class="bi bi-brightness-high"></i></td>
+                        <td><i class="bi bi-brightness-high"></i></td>
+                        <td><i class="bi bi-brightness-high"></i></td>
+                        <td><i class="bi bi-moon"></i></td>
+                        <td><i class="bi bi-moon"></i></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
 
     <!--  -->
     <!-- FAVORIS -->
     <!--  -->
 
+    <div class="container">
+        <h2 id="Favoris" class="p-2 fw-bolder pt-5 ms-5 ps-5">Favoris</h2>
+        <div class="row p-2 justify-content-around">
 
-    <h2 id="Favoris" class="p-2 fw-bolder pt-5 ms-5 ps-5">Favoris</h2>
+            <!--  -->
+            <!-- LE HAVRE -->
+            <!--  -->
 
-    <div class="row p-2 justify-content-around">
-
-        <!--  -->
-        <!-- LE HAVRE -->
-        <!--  -->
-
-        <div class="card col-lg-3 col-12 pt-3 d-lg-block d-none">
-            <img src="assets/LeHavre.webp" class="card-img-top" alt="le Havre">
-            <div class="card-body ">
-                <h5 class="card-title text-center fw-bold">Le Havre</h5>
-                <div class="d-flex justify-content-evenly">
-                    <a type="button" class="btn text-dark" href="havre.html"> Voir le temps</a>
-                    <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
-                        data-bs-target="#LeHavre">Favoris<span><i class="bi star bi-star-fill fs-6 ps-2"></i></span>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="LeHavre" tabindex="-1" aria-labelledby="LeHavreLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="LeHavreLabel">Le Havre</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Voulez-vous enlever cette ville de vos favoris ?
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ajouter</button>
-
+            <div class="card col-lg-3 col-12 pt-3 d-lg-block d-none">
+                <img src="assets/LeHavre.webp" class="card-img-top" alt="le Havre">
+                <div class="card-body ">
+                    <h5 class="card-title text-center fw-bold">Le Havre</h5>
+                    <div class="d-flex justify-content-evenly">
+                        <a type="button" class="btn text-dark" href="havre.html"> Voir le temps</a>
+                        <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
+                            data-bs-target="#LeHavre">Favoris<span><i class="bi star bi-star-fill fs-6 ps-2"></i></span>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!--  -->
-        <!-- PARIS -->
-        <!--  -->
+            <div class="modal fade" id="LeHavre" tabindex="-1" aria-labelledby="LeHavreLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="LeHavreLabel">Le Havre</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Voulez-vous enlever cette ville de vos favoris ?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn text-dark btn-secondary"
+                                data-bs-dismiss="modal">Enlever</button>
 
-        <div class="card col-lg-3 col-12 pt-3">
-            <img src="assets/tour-eiffel.jpg" class="card-img-top" alt="Paris">
-            <div class="card-body">
-                <h5 class="card-title text-center fw-bold">Paris</h5>
-                <div class="d-flex justify-content-evenly">
-                    <a type="button" class="btn text-dark" href="paris.html" target="_blank"> Voir le temps</a>
-                    <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
-                        data-bs-target="#Paris">Favoris<span><i class="bi star bi-star-fill fs-6 ps-2"></i></span>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="Paris" tabindex="-1" aria-labelledby="ParisLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="ParisLabel">Paris</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Voulez-vous enlever cette ville de vos favoris ?
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ajouter</button>
-
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!--  -->
-        <!-- MARSEILLE -->
-        <!--  -->
+            <!--  -->
+            <!-- PARIS -->
+            <!--  -->
 
-        <div class="card col-lg-3 col-12 pt-3">
-            <img src="assets/vieux-ports.jpg" class="card-img-top" alt="Marseille">
-            <div class="card-body">
-                <h5 class="card-title text-center fw-bold">Marseille</h5>
-                <div class="d-flex justify-content-evenly">
-                    <a type="button" class="btn text-dark" href="marseille.html" target="_blank"> Voir le temps</a>
-                    <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
-                        data-bs-target="#Marseille">Favoris<span><i class="bi star bi-star-fill fs-6 ps-2"></i></span>
+            <div class="card col-lg-3 col-12 pt-3">
+                <img src="assets/tour-eiffel.jpg" class="card-img-top" alt="Paris">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">Paris</h5>
+                    <div class="d-flex justify-content-evenly">
+                        <a type="button" class="btn text-dark" href="paris.html" target="_blank"> Voir le temps</a>
+                        <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
+                            data-bs-target="#Paris">Favoris<span><i class="bi star bi-star-fill fs-6 ps-2"></i></span>
+                    </div>
                 </div>
             </div>
+
+            <div class="modal fade" id="Paris" tabindex="-1" aria-labelledby="ParisLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ParisLabel">Paris</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Voulez-vous enlever cette ville de vos favoris ?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn text-dark btn-secondary"
+                                data-bs-dismiss="modal">Enlever</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
+            <!-- MARSEILLE -->
+            <!--  -->
+
+            <div class="card col-lg-3 col-12 pt-3">
+                <img src="assets/vieux-ports.jpg" class="card-img-top" alt="Marseille">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">Marseille</h5>
+                    <div class="d-flex justify-content-evenly">
+                        <a type="button" class="btn text-dark" href="marseille.html" target="_blank"> Voir le temps</a>
+                        <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
+                            data-bs-target="#Marseille">Favoris<span><i
+                                    class="bi star bi-star-fill fs-6 ps-2"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="Marseille" tabindex="-1" aria-labelledby="MarseilleLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="MarseilleLabel">Marseille</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Voulez-vous enlever cette ville de vos favoris ?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn text-dark btn-secondary"
+                                data-bs-dismiss="modal">Enlever</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <div class="modal fade" id="Marseille" tabindex="-1" aria-labelledby="MarseilleLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -301,99 +529,103 @@
     <!-- BORDEAUX -->
     <!--  -->
 
-    <div class="row p-2 justify-content-around">
-        <div class="card col-lg-3 col-12 pt-3 d-lg-block d-none">
-            <img src="assets/bordeaux.jpg" class="card-img-top" alt="bordeaux">
-            <div class="card-body">
-                <h5 class="card-title text-center fw-bold">Bordeaux</h5>
-                <div class="d-flex justify-content-evenly">
-                    <a type="button" class="btn text-dark" href="bordeaux.html" target="_blank"> Voir le temps</a>
-                    <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
-                        data-bs-target="#Bordeaux">Favoris<span><i class="bi star bi-star-fill fs-6 ps-2"></i></span>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="Bordeaux" tabindex="-1" aria-labelledby="BordeauxLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="BordeauxLabel">Bordeaux</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Voulez-vous enlever cette ville de vos favoris ?
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ajouter</button>
-
+    <div class="container">
+        <div class="row p-2 justify-content-around">
+            <div class="card col-lg-3 col-12 pt-3 d-lg-block d-none">
+                <img src="assets/bordeaux.jpg" class="card-img-top" alt="bordeaux">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">Bordeaux</h5>
+                    <div class="d-flex justify-content-evenly">
+                        <a type="button" class="btn text-dark" href="bordeaux.html"> Voir le temps</a>
+                        <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
+                            data-bs-target="#Bordeaux">Favoris<span><i
+                                    class="bi star bi-star-fill fs-6 ps-2"></i></span>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!--  -->
-        <!-- TOULOUSE -->
-        <!--  -->
-
-        <div class="card col-lg-3 col-12 pt-3 d-lg-block d-none">
-            <img src="assets/toulouse.jpg" class="card-img-top" alt="Toulouse">
-            <div class="card-body">
-                <h5 class="card-title text-center fw-bold">Toulouse</h5>
-                <div class="d-flex justify-content-evenly">
-                    <a type="button" class="btn text-dark" href="toulouse.html" target="_blank"> Voir le temps</a>
-                    <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
-                        data-bs-target="#Toulouse">Favoris<span><i class="bi star bi-star-fill fs-6 ps-2"></i></span>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="Toulouse" tabindex="-1" aria-labelledby="ToulouseLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="ToulouseLabel">Toulouse</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Voulez-vous enlever cette ville de vos favoris ?
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ajouter</button>
-
+            <div class="modal fade" id="Bordeaux" tabindex="-1" aria-labelledby="BordeauxLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="BordeauxLabel">Bordeaux</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Voulez-vous enlever cette ville de vos favoris ?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn text-dark btn-secondary"
+                                data-bs-dismiss="modal">Enlever</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!--  -->
-        <!-- BREST -->
-        <!--  -->
+            <!--  -->
+            <!-- TOULOUSE -->
+            <!--  -->
 
-        <div class="card col-lg-3 col-12 pt-3 d-lg-block d-none">
-            <img src="assets/brest.jpg" class="card-img-top" alt="Brest">
-            <div class="card-body">
-                <h5 class="card-title text-center fw-bold">Brest</h5>
-                <div class="d-flex justify-content-evenly">
-                    <a type="button" class="btn text-dark" href="brest.html" target="_blank"> Voir le temps</a>
-                    <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
-                        data-bs-target="#Brest">Favoris<span><i class="bi star bi-star-fill fs-6 ps-2"></i></span>
+            <div class="card col-lg-3 col-12 pt-3 d-lg-block d-none">
+                <img src="assets/toulouse.jpg" class="card-img-top" alt="Toulouse">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">Toulouse</h5>
+                    <div class="d-flex justify-content-evenly">
+                        <a type="button" class="btn text-dark" href="toulouse.html" target="_blank"> Voir le temps</a>
+                        <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
+                            data-bs-target="#Toulouse">Favoris<span><i
+                                    class="bi star bi-star-fill fs-6 ps-2"></i></span>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="modal fade" id="Brest" tabindex="-1" aria-labelledby="BrestLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="BrestLabel">Brest</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal fade" id="Toulouse" tabindex="-1" aria-labelledby="ToulouseLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ToulouseLabel">Toulouse</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Voulez-vous enlever cette ville de vos favoris ?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn text-dark btn-secondary"
+                                data-bs-dismiss="modal">Enlever</button>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        Voulez-vous enlever cette ville de vos favoris ?
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ajouter</button>
+                </div>
+            </div>
 
+            <!--  -->
+            <!-- BREST -->
+            <!--  -->
+
+            <div class="card col-lg-3 col-12 pt-3 d-lg-block d-none">
+                <img src="assets/brest.jpg" class="card-img-top" alt="Brest">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">Brest</h5>
+                    <div class="d-flex justify-content-evenly">
+                        <a type="button" class="btn text-dark" href="brest.html" target="_blank"> Voir le temps</a>
+                        <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
+                            data-bs-target="#Brest">Favoris<span><i class="bi star bi-star-fill fs-6 ps-2"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="Brest" tabindex="-1" aria-labelledby="BrestLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="BrestLabel">Brest</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Voulez-vous enlever cette ville de vos favoris ?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn text-dark btn-secondary"
+                                data-bs-dismiss="modal">Enlever</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -404,153 +636,154 @@
     <!-- SUGGESTIONS -->
     <!--  -->
 
-
-    <h2 class="p-2 fw-bolder pt-5 ms-5 ps-5"">Suggestions</h2>
-
-    <div class=" row p-2 justify-content-around">
-
-
-        <div class="card col-lg-3 col-12 pt-3">
-            <img src="assets/chamonix.jpg" class="card-img-top" alt="chamonix">
-            <div class="card-body">
-                <h5 class="card-title text-center fw-bold py-2">Chamonix</h5>
-                <div class="d-flex justify-content-evenly">
-                    <a type="button" class="btn text-dark" href="chamonix.html" target="_blank"> Voir le temps</a>
-                    <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
-                        data-bs-target="#Chamonix">Favoris<span><i class="bi  bi-star-fill fs-6 ps-2"></i></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="Chamonix" tabindex="-1" aria-labelledby="ChamonixLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="ChamonixLabel">Chamonix</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Voulez-vous ajouter cette ville en favoris ?
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ajouter</button>
+    <div class=" container">
+        <h2 class="p-2 fw-bolder pt-5 ms-5 ps-5"">Suggestions</h2>
+   
+        <div class=" row p-2 justify-content-around">
+            <div class="card col-lg-3 col-12 pt-3">
+                <img src="assets/chamonix.jpg" class="card-img-top" alt="chamonix">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold py-2">Chamonix</h5>
+                    <div class="d-flex justify-content-evenly">
+                        <a type="button" class="btn text-dark" href="chamonix.html" target="_blank"> Voir le temps</a>
+                        <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
+                            data-bs-target="#Chamonix">Favoris<span><i class="bi  bi-star-fill fs-6 ps-2"></i></span>
+                        </button>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card col-lg-3 col-12 pt-3 d-lg-block d-none">
-            <img src="assets/carcassonne.jpg" class="card-img-top" alt="Carcassonne">
-            <div class="card-body">
-                <h5 class="card-title text-center fw-bold py-2">Carcassone</h5>
-                <div class="d-flex justify-content-evenly">
-                    <a type="button" class="btn text-dark" href="carcassonne.html" target="_blank"> Voir le temps</a>
-                    <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
-                        data-bs-target="#Carcassonne">Favoris<span><i class="bi  bi-star-fill fs-6 ps-2"></i></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="Carcassonne" tabindex="-1" aria-labelledby="CarcassonneLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="CarcassoneLabel">Carcassonne</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Voulez-vous ajouter cette ville en favoris ?
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ajouter</button>
-
+            <div class="modal fade" id="Chamonix" tabindex="-1" aria-labelledby="ChamonixLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ChamonixLabel">Chamonix</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Voulez-vous ajouter cette ville en favoris ?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn text-dark btn-secondary"
+                                data-bs-dismiss="modal">Ajouter</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card col-lg-3 col-12 pt-3 d-lg-block d-none">
-            <img src="assets/Lille.jpg" class="card-img-top" alt="Lille">
-            <div class="card-body">
-                <h5 class="card-title text-center fw-bold py-2">Lille</h5>
-                <div class="d-flex justify-content-evenly">
-                    <a type="button" class="btn text-dark" href="lille.html" target="_blank"> Voir le temps</a>
-                    <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
-                        data-bs-target="#Lille">Favoris<span><i class="bi  bi-star-fill fs-6 ps-2"></i></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="Lille" tabindex="-1" aria-labelledby="LilleLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="LilleLabel">Lille</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Voulez-vous ajouter cette ville en favoris ?
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ajouter</button>
-
+            <div class="card col-lg-3 col-12 pt-3 d-lg-block d-none">
+                <img src="assets/carcassonne.jpg" class="card-img-top" alt="Carcassonne">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold py-2">Carcassone</h5>
+                    <div class="d-flex justify-content-evenly">
+                        <a type="button" class="btn text-dark" href="carcassone.html" target="_blank"> Voir le temps</a>
+                        <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
+                            data-bs-target="#Carcassonne">Favoris<span><i class="bi  bi-star-fill fs-6 ps-2"></i></span>
+                        </button>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
+            <div class="modal fade" id="Carcassonne" tabindex="-1" aria-labelledby="CarcassonneLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="CarcassoneLabel">Carcassonne</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Voulez-vous ajouter cette ville en favoris ?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn text-dark btn-secondary"
+                                data-bs-dismiss="modal">Ajouter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="card col-lg-3 col-12 pt-3 d-lg-block d-none">
+                <img src="assets/Lille.jpg" class="card-img-top" alt="Lille">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold py-2">Lille</h5>
+                    <div class="d-flex justify-content-evenly">
+                        <a type="button" class="btn text-dark" href="lille.html"> Voir le temps</a>
+                        <button href="#" class="btn text-dark fs-6" data-bs-toggle="modal"
+                            data-bs-target="#Lille">Favoris<span><i class="bi  bi-star-fill fs-6 ps-2"></i></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="Lille" tabindex="-1" aria-labelledby="LilleLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="LilleLabel">Lille</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Voulez-vous ajouter cette ville en favoris ?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn text-dark btn-secondary"
+                                data-bs-dismiss="modal">Ajouter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
 
-        <!--  -->
-        <!-- ACTUALITES -->
-        <!--  -->
+    <!-- -->
+    <!-- ACTUALITES -->
+    <!--  -->
 
+    <div class="container">
         <h2 id="Actualités" class="p-2 fw-bolder pt-5 ms-5 ps-5 d-lg-block d-none">Actualités</h2>
+
 
         <div class=" row justify-content-around pb-5 ">
 
             <div class="card col-lg-3 col-12 pt-3 d-lg-block d-none tendences">
                 <img src="assets/feu.jpg" class="card-img-top" alt="feux">
                 <div class="card-body">
-                    <h5 class="card-title text-center fw-bold ">Incendies dévastateurs dans le monde</h5>
+                    <a class="card-title fs-5 fw-bold text-decoration-none text-dark" type="button"
+                        href="incendies.html"">Incendies dévastateurs dans le monde</a>
                 </div>
             </div>
 
-            <div class="card col-lg-3 col-12 pt-3 d-lg-block d-none">
-                <img src="assets/ouragan.webp" class="card-img-top" alt="ouragan">
-                <div class="card-body">
-                    <h5 class="card-title text-center fw-bold ">Ouragans dévastateurs dans le monde</h5>
+            <div class=" card col-lg-3 col-12 pt-3 d-lg-block d-none">
+                        <img src="assets/ouragan.webp" class="card-img-top" alt="ouragan">
+                        <div class="card-body">
+                            <a class="card-title fs-5 fw-bold text-decoration-none text-dark" type="button"
+                                href="ouragans.html">
+                                Ouragans dévastateurs dans le monde</a>
+                        </div>
+                </div>
+
+                <div class="card col-lg-3 col-12 pt-3 d-lg-block d-none">
+                    <img src="assets/inondations.jpg" class="card-img-top" alt="innondations">
+                    <div class="card-body">
+                        <a class="card-title fs-5 fw-bold text-decoration-none text-dark" type="button"
+                            href="innondations.html">
+                            Innondations dévastatrices dans le monde</a>
+                    </div>
                 </div>
             </div>
-
-            <div class="card col-lg-3 col-12 pt-3 d-lg-block d-none">
-                <img src="assets/inondations.jpg" class="card-img-top" alt="innondations">
-                <div class="card-body">
-                    <h5 class="card-title text-center fw-bold ">Innondations dévastatrices dans le monde</h5>
-                </div>
-            </div>
-
+        </div>
         </div>
 
-        <!--  -->
-        <!-- FOOTER -->
-        <!--  -->
+    <!--  -->
+    <!-- FOOTER -->
+    <!--  -->
 
 
-        <div class="row footer py-5">
-            <div class="row">
-                <div class="col-lg-12 col-12 text-center justify-content-around pb-4">
-                    <span class="pe-5 ps-5 text-dark">Copyright © 2022 Jordan & Sophie.</span>
-                    <a type="button" class="pe-5 ps-5 text-dark text-decoration-none" href="conditions.html">Mentions
-                        Légales | CGU </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col col-lg-12 col-12 j text-center justify-content-evenly">
-                    <img class="rs" src="assets/insta.png">
-                    <img class="rs" src="assets/twitter.png">
-                </div>
+    <div class="row footer pt-5 pb-5 m-0">
+        <div class="row">
+            <div class="col-lg-12 col-12 text-center justify-content-around pb-4">
+                <span class="pe-4 text-dark">Copyright © 2022 Jordan & Sophie.</span>
+                <a type="button" class="ps-4 text-dark text-decoration-none" href="conditions.html">Mentions
+                    Légales | CGU </a>
             </div>
         </div>
 
