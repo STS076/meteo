@@ -72,16 +72,74 @@
     <!--  -->
     <!-- MAIN -->
     <!--  -->
-    <div class="container d-lg-block d-none">
-        <div id="Carte" class="row-fluid d-flex justify-content-evenly pt-4 pb-2">
-            <span class="badge today">Aujourd'hui</span>
-            <span class="badge today">Demain</span>
-            <span class="badge today">Week-End</span>
-            <span class="badge today">15 jours</span>
+
+
+    <div class="container pt-3">
+        <ul class="nav nav-tabs d-flex justify-content-evenly badge" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active text-dark" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                    type="button" role="tab" aria-controls="home" aria-selected="true">Aujourd'hui</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-dark" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                    type="button" role="tab" aria-controls="profile" aria-selected="false">Demain</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-dark" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                    type="button" role="tab" aria-controls="contact" aria-selected="false">Week-End</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="container d-lg-block d-none">
+                    <div class="row">
+                        <div class="col-lg-7 col-12 text-center cartefrance ">
+                            <img src="assets/cartefrance.jpg" alt="cartefrance">
+                        </div>
+                        <div class="col-lg-5 col-12 text-center pt-4">
+                            <div class="row text-center pe-3 ">
+                                <p class="fw-bold fs-4">Mardi 26 avril 2022</p>
+                                <p class="fs-6 text-start">La journée débute avec un temps largement ensoleillé.
+                                    Quelques cumulus de
+                                    beau temps se forment
+                                    rapidement près des côtes de la Manche. Ils sont plus nombreux en direction de la
+                                    côte
+                                    d'Emeraude.
+                                    <br>
+                                    Dans l'après-midi, le soleil brille très généreusement avec quelques nuages
+                                    décoratifs dans
+                                    l'intérieur.
+                                    <br>
+                                    En matinée, le vent d'est-nord-est est faible à modéré. Il vire au nord-est
+                                    l'après-midi en
+                                    étant
+                                    sensible près du littoral avec parfois des rafales entre 50 et 60 km/h.
+                                    <br>
+                                    Le temps est encore très agréable pour mercredi mais on note toujours un vent de
+                                    nord-est
+                                    sensible
+                                    près de la Manche. Du côté du ciel, il faudra compter sur la présence d'un voile
+                                    nuageux. Les
+                                    températures sont comprises entre 14 et 20°C.
+                                    <br>
+                                    Le voile nuageux est plus épais pour jeudi mais le temps est beaucoup plus doux. Les
+                                    températures
+                                    grimpent pour franchir facilement les 20°C lorsque le vent de nord-est ne souffle
+                                    pas.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">eee</div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">zzz</div>
         </div>
     </div>
 
-    <div class="container d-lg-block d-none">
+
+    <!-- <div class="container d-lg-block d-none">
         <div class="row">
             <div class="col-lg-7 col-12 text-center cartefrance ">
                 <img src="assets/cartefrance.jpg" alt="cartefrance">
@@ -109,12 +167,10 @@
                         Le voile nuageux est plus épais pour jeudi mais le temps est beaucoup plus doux. Les
                         températures
                         grimpent pour franchir facilement les 20°C lorsque le vent de nord-est ne souffle pas.
-
                 </div>
             </div>
-
         </div>
-    </div>
+    </div> -->
 
     <div class="container d-lg-none d">
         <div class="row">
