@@ -776,50 +776,49 @@
     <!-- carte -->
     <!--  -->
 
-    <div class="container pt-3 d-lg-none d-block pb-5">
+    <div class="container d-lg-none d">
+        <h2 id="Carte" class="p-2 fw-bolder pt-3 ms-5 ps-5 d-lg-none d">Carte</h2>
+    </div>
 
-        <h2 id="Carte" class="p-2 fw-bolder pt-5 ms-5 ps-5">Carte</h2>
-
-        <div class="container pt-3">
-            <ul class="nav nav-tabs d-flex justify-content-evenly badge" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active text-dark" id="homeSM-tab" data-bs-toggle="tab"
-                        data-bs-target="#homeSM" type="button" role="tab" aria-controls="home"
-                        aria-selected="true">Aujourd'hui</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link text-dark" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profileSM"
-                        type="button" role="tab" aria-controls="profileSM" aria-selected="false">Demain</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link text-dark" id="contactSM-tab" data-bs-toggle="tab" data-bs-target="#contactSM"
-                        type="button" role="tab" aria-controls="contact" aria-selected="false">Week-End</button>
-                </li>
-            </ul>
-            <div class="tab-content" id="myTab">
-                <div class="tab-pane fade show active" id="homeSM" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 text-center cartefrance ">
-                                <img src="assets/cartefrance.jpg" alt="cartefrance">
-                            </div>
+    <div class="container pt-3 pb-5 d-lg-none d">
+        <ul class="nav nav-tabs d-flex justify-content-evenly badge" id="myTabSM" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active text-dark" id="homeSM-tab" data-bs-toggle="tab" data-bs-target="#homeSM"
+                    type="button" role="tab" aria-controls="home" aria-selected="true">Aujourd'hui</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-dark" id="profileSM-tab" data-bs-toggle="tab" data-bs-target="#profileSM"
+                    type="button" role="tab" aria-controls="profile" aria-selected="false">Demain</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-dark" id="contactSM-tab" data-bs-toggle="tab" data-bs-target="#contactSM"
+                    type="button" role="tab" aria-controls="contact" aria-selected="false">Week-End</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="homeSM" role="tabpanel" aria-labelledby="homeSM-tab">
+                <div class="container d-lg-none d">
+                    <div class="row">
+                        <div class="col-12 text-center cartefrance ">
+                            <img src="assets/cartefrance.jpg" alt="cartefrance">
                         </div>
+
                     </div>
                 </div>
             </div>
 
             <div class="tab-pane fade" id="profileSM" role="tabpanel" aria-labelledby="profileSM-tab">
-                <div class="container">
+                <div class="container d-lg-none d">
                     <div class="row">
                         <div class="col-12 text-center cartefrance ">
                             <img src="assets/cartefrance2.jpg" alt="cartefrance">
                         </div>
+
                     </div>
                 </div>
             </div>
-
-            <div class="tab-pane fade" id="contactSM" role="tabpanel" aria-labelledby="contact-tab">
-                <div class="container">
+            <div class="tab-pane fade" id="contactSM" role="tabpanel" aria-labelledby="contactSM-tab">
+                <div class="container d-lg-none d">
                     <div class="row">
                         <div class="col-12 text-center cartefrance ">
                             <img src="assets/cartefrance3.webp" alt="cartefrance">
@@ -827,11 +826,8 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-
-
 
 
     <!--  -->
