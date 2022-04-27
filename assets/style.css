@@ -38,7 +38,6 @@ img {
 }
 
 
-
 /*  */
 /* MAIN */
 /*  */
@@ -53,14 +52,6 @@ body{
     width: 80%;
     height: auto;
 }
-
-.tendences{
-    /* background-color: #EAEAEA; */
-}
-
-
-
-
 
 .badge{
     color:black;
@@ -102,4 +93,9 @@ body{
     width: 100%;
     height: auto;
 }
+
+/*  */
+/* VILLES */
+/*  */
+
 
