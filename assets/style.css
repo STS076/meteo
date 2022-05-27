@@ -1,14 +1,10 @@
-/*  */
-/* HEADER */
-/*  */
-
+body {
+    font-family: 'Poppins';
+}
 
 .navbar {
     background-color: #036BA1;
 }
-
-
-
 
 
 /*  */
@@ -41,9 +37,6 @@
     color: black;
 }
 
-/* .btn{
-    background-color: #FFE9CE;;
-} */
 
 .star{
     color: #FFE156;
@@ -84,6 +77,11 @@
     display: inline;
 }
 
+.imageVille{
+    width: 100%;
+    height: 10Rem;
+}
+
 ::placeholder{
     font-style: italic;
 }
@@ -97,8 +95,6 @@
     background-blend-mode: darken;
 }
 
-
-
 @media screen and (min-width:600px) {
     .cartes {
         width: 70%;
@@ -109,4 +105,9 @@
 
 .displaynone{
     display: none;
+}
+
+
+.pink {
+    color: #DB0084
 }
