@@ -15,60 +15,50 @@
 
 </head>
 
-<body>
+<body class="background">
 
 
-    <!--  -->
-    <!-- HEADER -->
-    <!--  -->
-
-    <header>
-        <div class="row text-center header m-0 p-0">
-            <div class="col-lg-12 col-12 m-0 p-0">
-                <div class="fw-bold fs-1 ">
-                    <img class="image" src="assets/cielbleu.jpg" alt="ciel bleu">
-                    <a type="button" class="meteo text-decoration-none" href="index.html">MÉTÉO</a>
-                </div>
-            </div>
-        </div>
-    </header>
 
     <!--  -->
     <!-- NAVBAR -->
     <!--  -->
 
-    <!-- <div class="container-fluid"> -->
 
-    <nav class="navbar navbar-expand-lg navbar-light  ">
+    <nav id="top" class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand ps-5 d-lg-block d-none" href="#">
-                <img class="logo" src="assets/logo-meteo.png" alt="logo météo">
-            </a>
+            <a class="navbar-brand text-light" href="#"><i
+                    class="bi bi-emoji-sunglasses me-1 text-warning"></i>Météo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
-                <a type="button" class="nav-link active text-dark fs-3" href="index.html"
-                    aria-current="page">Accueil</a>
-                <a type="button" class="nav-link active text-dark fs-3" href="index.html#Carte" aria-current="page"
-                    href="#Carte">
-                    Carte</a>
-                <a type="button" class="nav-link active text-dark fs-3" href="index.html#Favoris" aria-current="page"
-                    href="#Favoris">
-                    Favoris</a>
-                <a type="button" class="nav-link active text-dark fs-3" href="index.html#Actualités" aria-current="page"
-                    href="#Actualités">
-                    Actualités</a>
-                <nav class="navbar navbar-light ">
-                    <div class="container-fluid">
-                        <form class="d-flex">
-                            <input class="form-control" type="search" placeholder="Rechercher" aria-label="Search">
-                            <button class="btn bouton text-dark" type="submit">Rechercher</button>
-                        </form>
-                    </div>
-                </nav>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#"
+                            onclick="retourMaison()">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Mes favoris
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li onclick="showForecast(6456451)"><a class="dropdown-item">Le Havre</a></li>
+                            <li onclick="showForecast(2643743)"><a class="dropdown-item">Londres</a></li>
+                            <li onclick="showForecast(5391811)"><a class="dropdown-item">San Diego</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="#">Météo des plages</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control" type="search" placeholder="Rechercher une ville"
+                        style="font-style:italic">
+                    <button class="btn text-light" type="submit"><i class="bi bi-search"></i></button>
+                </form>
             </div>
         </div>
     </nav>
